@@ -4,6 +4,7 @@ import cors from "cors";
 import ProductRoute from "./routes/ProductRoute.js";
 
 
+
 const app = express();
 
 app.use(cors());
