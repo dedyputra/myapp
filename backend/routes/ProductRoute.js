@@ -5,7 +5,7 @@ import {
   saveProduct,
   updateProduct,
   deleteProduct
-} from "../controllers/ProductControllers.js";
+} from "../controllers/ProductController.js";
 
 const router = express.Router();
 
@@ -14,7 +14,7 @@ const router = express.Router();
 router.get('/products', getProducts);
 router.get('/products/:id', getProductsById);
 router.post('/products', saveProduct);
-router.path('/products/:id', updateProduct);
+router.patch('/products/:id', updateProduct);
 router.delete('/products/:id', deleteProduct);
 
 
